@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-import solution
+import solution2
 import pytest
 
 
 def test_myrange2_is_a_list():
-    output = solution.myrange2(10)
+    output = solution2.myrange2(10)
     assert type(output) is list
 
 
@@ -17,13 +17,13 @@ def test_myrange2_is_a_list():
                           (10, 20, 3, list(range(10, 20, 3)))])
 def test_myrange2(first, second, third, output):
     if third:
-        assert solution.myrange2(first, second, third) == output
+        assert solution2.myrange2(first, second, third) == output
     else:
-        assert solution.myrange2(first, second) == output
+        assert solution2.myrange2(first, second) == output
 
 
 def test_myrange3_is_a_generator():
-    output = solution.myrange3(10)
+    output = solution2.myrange3(10)
     assert iter(output) is output
 
 
@@ -35,6 +35,6 @@ def test_myrange3_is_a_generator():
                           (10, 20, 3, list(range(10, 20, 3)))])
 def test_myrange3(first, second, third, output):
     if third:
-        assert list(solution.myrange3(first, second, third)) == output
+        assert list(solution2.myrange3(first, second, third)) == output
     else:
-        assert list(solution.myrange3(first, second)) == output
+        assert list(solution2.myrange3(first, second)) == output
