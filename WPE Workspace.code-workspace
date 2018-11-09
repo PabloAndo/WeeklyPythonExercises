@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"exception": "cpp"
+		},
+		"python.pythonPath": "C:\\Python\\Python37\\python.exe"
+	}
+}
