@@ -1,8 +1,9 @@
 {
     "C_Cpp.intelliSenseEngineFallback": "Disabled",
-    "C_Cpp.errorSquiggles": "Enabled",    
+    "C_Cpp.errorSquiggles": "Enabled",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pep8Enabled": false,
-    "python.linting.flake8Enabled": false,    
+    "python.linting.flake8Enabled": true,
+    "python.pythonPath": "C:\\Python\\Python37\\python.exe",
 }
