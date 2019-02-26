@@ -8,6 +8,7 @@
 # 4 methods should be created.
 
 from collections import Counter
+import statistics
 
 
 all_people = [{'name': 'Reuven', 'age': 48, 'hobbies': ['Python', 'cooking', 'reading']},
@@ -22,50 +23,49 @@ def average_age_under(people, maxage=200):
     """ Return the average age of all people, or (optionally)
     all people under a given age.
     """
-    output = 0
-    i = 0
     try:
-        for dc in people:
-
-            if dc['age'] > maxage:
-                continue
-            else:
-                output = output + dc['age']
-                i += 1
-        output = output/i
-
-    except ZeroDivisionError as e:
-        print('Incorrect age. Try with a high number')
-
-    return output
+        return statistics.mean([person['age'] for person in people if person['age'] < maxage])
+    except statistics.StatisticsError:
+        return 0
 
 
 def all_hobbies(people):
+    """ Return a set of the different hobbies enjoyed by people in our database.
+    """
+    return {hobby for p in people for hobby in p['hobbies']}
+    """
     output = set()
     for dc in people:
         for hobbie in dc['hobbies']:
             output.add(hobbie)
     print(output)
-    return output
+    return output"""
 
 
 def hobby_counter(people):
-    cnt = Counter()
+    """ Return a Counter object indicating how many people have each hobby - this is, how many people are interested in Python, how many enjoy cooking, and so forth. 
+    """
+    return Counter(hobby for dc in people for hobby in set(dc['hobbies']))
+    """cnt = Counter()
     for dc in people:
         for hobbie in dc['hobbies']:
             cnt[hobbie] += 1
     print(cnt)
-    return cnt
+    return cnt"""
 
 
 def n_most_common(people, n):
+    """ Return the n most common hobbies, as a list of strings.
+    """
+    return [h[0] for h in hobby_counter(people).most_common(n)]
+    """
     cnt = hobby_counter(people)
 
     output = [elem[0] for elem in cnt.most_common(n)]
 
     print(cnt.most_common(n))
     print(output)
-    return output
+    return output"""
 
 
 if __name__ == '__main__':
