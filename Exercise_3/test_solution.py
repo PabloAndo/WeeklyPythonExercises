@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import solution
 
 logfilename = 'mini-access-log.txt'

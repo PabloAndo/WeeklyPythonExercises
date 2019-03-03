@@ -11,7 +11,7 @@ import re
 
 
 def create_math_problems(f):
-    for i in range(1, 21):
+    for i in range(1, 101):
         a = random.randint(-40, 40)
         b = random.randint(-40, 40)
         c = random.randint(-40, 40)
@@ -29,9 +29,19 @@ def create_math_problems(f):
 def solve_math_problems(f):
     math_problems = f.readlines()
     for problem in math_problems:
-        print(problem, end='')
-        regex_num = re.split(r'\s+', problem)
-        print(regex_num)
+
+        pattern = re.compile(r"(-?\d+|\-|\+)")
+        match = pattern.findall(problem)
+        match.pop(0)
+        # print(match)
+        cadena = ''
+        for i in match:
+            cadena += i
+        # print(cadena)
+        # print(eval(cadena))
+        pattern_sb = re.compile(r"(\_+)")
+        match_sub = pattern_sb.sub(str(eval(cadena)), problem)
+        print(match_sub, end='')
 
 
 if __name__ == "__main__":
@@ -39,3 +49,4 @@ if __name__ == "__main__":
         create_math_problems(f)
     with open('test-problems.txt', 'r') as f2:
         solve_math_problems(f2)
+    print('hello')
