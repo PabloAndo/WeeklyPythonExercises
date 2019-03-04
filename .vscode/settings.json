@@ -2,14 +2,21 @@
     "C_Cpp.intelliSenseEngineFallback": "Disabled",
     "C_Cpp.errorSquiggles": "Enabled",
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": false,
     "python.linting.flake8Enabled": true,
     "python.pythonPath": "C:\\Python\\Python37\\python.exe",
     "python.unitTest.pyTestArgs": [
-        "Exercise_11"
+        "Exercise_13"
     ],
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
     "python.unitTest.pyTestEnabled": true,
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./Exercise_13",
+        "-p",
+        "test_*.py"
+    ],
 }
