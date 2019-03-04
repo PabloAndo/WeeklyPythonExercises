@@ -5,3 +5,6 @@ How to use the function zip
 - Using numedtuples
 - Default dictionaries from collections
 - Create a custom Exception
+
+====== Exercise 11 ======
+- How to make a class a context manager

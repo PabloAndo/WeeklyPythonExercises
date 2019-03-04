@@ -2,7 +2,6 @@
 from collections import namedtuple
 from collections import defaultdict
 
-from operator import attrgetter
 
 Person = namedtuple('Person', ['first', 'last'])
 
