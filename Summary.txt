@@ -8,3 +8,6 @@ How to use the function zip
 
 ====== Exercise 11 ======
 - How to make a class a context manager
+
+====== Exercise 12 ======
+I don't understand anything
