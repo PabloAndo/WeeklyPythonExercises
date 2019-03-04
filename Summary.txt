@@ -11,3 +11,9 @@ How to use the function zip
 
 ====== Exercise 12 ======
 I don't understand anything
+
+====== Exercise 13 ======
+The usage of @property in classes
+
+====== Exercise 14 ======
+When invoking == operator we are calling __eq__ method
