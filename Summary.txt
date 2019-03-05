@@ -39,3 +39,5 @@ itemgetter
 ====== Exercise 22 ======
 decorators
 
+====== Exercise 23 ======
+chr, ord functions
