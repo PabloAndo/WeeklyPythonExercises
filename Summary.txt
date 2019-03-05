@@ -24,3 +24,8 @@ f strings
 
 ====== Exercise 18 ======
 Using threads for counting words on files
+
+====== Exercise 19 ======
+Nested functions: one function return another function
+set function
+all function
