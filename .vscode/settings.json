@@ -7,7 +7,7 @@
     "python.linting.flake8Enabled": true,
     "python.pythonPath": "C:\\Python\\Python37\\python.exe",
     "python.unitTest.pyTestArgs": [
-        "Exercise_21"
+        "Exercise_22"
     ],
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,

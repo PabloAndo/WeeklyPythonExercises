@@ -35,3 +35,7 @@ argparse function
 
 ====== Exercise 21 ======
 itemgetter
+
+====== Exercise 22 ======
+decorators
+
