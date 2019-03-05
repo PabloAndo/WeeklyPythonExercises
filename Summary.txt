@@ -17,3 +17,10 @@ The usage of @property in classes
 
 ====== Exercise 14 ======
 When invoking == operator we are calling __eq__ method
+
+====== Exercise 17 ======
+Supermarket list
+f strings
+
+====== Exercise 18 ======
+Using threads for counting words on files
